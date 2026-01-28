@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="kk">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Checkbox strike</title>
+    <style>
+      body {
+        background-color: pink;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: white;
+        width: 400px;
+        height: 500px;
+        border-radius: 40px;
+      }
+      label {
+        display: flex;
+        align-items: center;
+      }
+      .tasks {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        width: 300px;
+      }
+      .check {
+        width: 24px;
+        height: 24px;
+      }
+      .task {
+        width: 300px;
+        border: none;
+        border-bottom: 1px solid black;
+        padding: 5px;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TO DO LIST</h1>
+      <div class="tasks">
+        <label>
+          <input type="checkbox" id="check1" class="check" />
+          <input type="text" id="task1" class="task" placeholder="task 1" />
+        </label>
+        <label>
+          <input type="checkbox" id="check2" class="check" />
+          <input type="text" id="task2" class="task" placeholder="task 2" />
+        </label>
+        <label>
+          <input type="checkbox" id="check3" class="check" />
+          <input type="text" id="task3" class="task" placeholder="task 3" />
+        </label>
+        <label>
+          <input type="checkbox" id="check4" class="check" />
+          <input type="text" id="task4" class="task" placeholder="task 4" />
+        </label>
+        <label>
+          <input type="checkbox" id="check5" class="check" />
+          <input type="text" id="task5" class="task" placeholder="task 5" />
+        </label>
+        <label>
+          <input type="checkbox" id="check6" class="check" />
+          <input type="text" id="task6" class="task" placeholder="task 6" />
+        </label>
+        <label>
+          <input type="checkbox" id="check7" class="check" />
+          <input type="text" id="task7" class="task" placeholder="task 7" />
+        </label>
+      </div>
+    </div>
+    <script>
+      const check1 = document.getElementById("check1");
+      const task1 = document.getElementById("task1");
+
+      check1.addEventListener("click", function () {
+        if (task1.value != "") {
+          task1.style.textDecoration = "line-through";
+        } else {
+          task1.style.textDecoration = "none";
+        }
+      });
+      const check2 = document.getElementById("check2");
+      const task2 = document.getElementById("task2");
+
+      check2.addEventListener("click", function () {
+        if (task2.value != "") {
+          task2.style.textDecoration = "line-through";
+        } else {
+          task2.style.textDecoration = "none";
+        }
+      });
+      const check3 = document.getElementById("check3");
+      const task3 = document.getElementById("task3");
+
+      check3.addEventListener("click", function () {
+        if (task3.value != "") {
+          task3.style.textDecoration = "line-through";
+        } else {
+          task3.style.textDecoration = "none";
+        }
+      });
+      const check4 = document.getElementById("check4");
+      const task4 = document.getElementById("task4");
+
+      check4.addEventListener("click", function () {
+        if (task4.value != "") {
+          task4.style.textDecoration = "line-through";
+        } else {
+          task4.style.textDecoration = "none";
+        }
+      });
+      const check5 = document.getElementById("check5");
+      const task5 = document.getElementById("task5");
+
+      check5.addEventListener("click", function () {
+        if (task5.value != "") {
+          task5.style.textDecoration = "line-through";
+        } else {
+          task5.style.textDecoration = "none";
+        }
+      });
+      const check6 = document.getElementById("check6");
+      const task6 = document.getElementById("task6");
+
+      check6.addEventListener("click", function () {
+        if (task6.value != "") {
+          task6.style.textDecoration = "line-through";
+        } else {
+          task6.style.textDecoration = "none";
+        }
+      });
+      const check7 = document.getElementById("check7");
+      const task7 = document.getElementById("task7");
+
+      check7.addEventListener("click", function () {
+        if (task7.value != "") {
+          task7.style.textDecoration = "line-through";
+        } else {
+          task7.style.textDecoration = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
